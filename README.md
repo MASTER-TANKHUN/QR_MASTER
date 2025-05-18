@@ -4,7 +4,7 @@
 
 **Download and try it yourself.**
 
-**Or go to [This Website](https://htmlpreview.github.io).**
+**Can't open in GitHub HTML Preview Because it will only show errors**
 
 **I'm Bored to write it.**
 
