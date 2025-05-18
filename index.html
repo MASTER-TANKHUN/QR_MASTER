@@ -25,22 +25,22 @@
         <h2>Upload & Scan QR Code</h2>
         
         <label for="file-upload" class="upload-area">
-        <div class="upload-icon">📁</div>
-        <h3>Upload QR Code Image</h3>
-        <p>Click or drag & drop image here</p>
+            <div class="upload-icon">📁</div>
+            <h3>Upload QR Code Image</h3>
+            <p>Click or drag & drop image here</p>
         </label>
         
         <input type="file" id="file-upload" accept="image/*">
         
         <div id="preview-container">
-        <img id="preview" alt="QR Code Preview">
+            <img id="preview" alt="QR Code Preview">
         </div>
         
         <div id="result-container">
-        <h3>Scan Result:</h3>
-        <div id="scan-result"></div>
-        <a id="result-link" class="btn" target="_blank">Open Link</a>
-        <button id="copy-btn" class="btn btn-outline">Copy Link</button>
+            <h3>Scan Result:</h3>
+            <div id="scan-result"></div>
+            <a id="result-link" class="btn" target="_blank">Open Link</a>
+            <button id="copy-btn" class="btn btn-outline">Copy Link</button>
         </div>
     </div>
 
@@ -59,7 +59,9 @@
         <p>QR Master - Develop By MASTER-T</p>
     </footer>
     </div>
-
+    
+    <script src="https://unpkg.com/jsqr/dist/jsQR.js"></script>
+    <script src="main.js"></script>
     <script src="scan.js"></script>
     <script src="gen.js"></script>
 </body>
