@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Master</title>
+    <link rel="icon" href="https://c8.alamy.com/comp/2WDMPHK/scanner-recognizing-and-reading-a-qr-code-on-smartphone-screen-qr-code-payments-concept-2WDMPHK.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsQR/1.4.0/jsQR.min.js"></script>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1>QR Master</h1>
+        <p>Scan and Generate QR Codes easily</p>
+    </header>
+
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="scan">Scan QR Code</button>
+        <button class="tab-btn" data-tab="generate">Generate QR Code</button>
+    </div>
+
+    <div id="scan-panel" class="panel active">
+        <h2>Upload & Scan QR Code</h2>
+        
+        <label for="file-upload" class="upload-area">
+        <div class="upload-icon">📁</div>
+        <h3>Upload QR Code Image</h3>
+        <p>Click or drag & drop image here</p>
+        </label>
+        
+        <input type="file" id="file-upload" accept="image/*">
+        
+        <div id="preview-container">
+        <img id="preview" alt="QR Code Preview">
+        </div>
+        
+        <div id="result-container">
+        <h3>Scan Result:</h3>
+        <div id="scan-result"></div>
+        <a id="result-link" class="btn" target="_blank">Open Link</a>
+        <button id="copy-btn" class="btn btn-outline">Copy Link</button>
+        </div>
+    </div>
+
+    <div id="generate-panel" class="panel">
+        <h2>Generate QR Code</h2>
+        
+        <input type="text" id="qr-text" placeholder="Enter URL or text to generate QR code...">
+        <button id="generate-btn" class="btn">Generate QR Code</button>
+        
+        <div id="qrcode"></div>
+        
+        <a id="qr-download" class="btn" download="qrcode.png">Download QR Code</a>
+    </div>
+
+    <footer>
+        <p>QR Master - Develop By MASTER-T</p>
+    </footer>
+    </div>
+
+    <script src="scan.js"></script>
+    <script src="gen.js"></script>
+</body>
+</html>
